@@ -4,7 +4,7 @@ window.onload = function() {
           'type': 'POST',
           'url': 'https://api.clarifai.com/v2/models/bd367be194cf45149e75f01d59f77ba7/outputs',
           'headers': {
-              'Authorization': 'key a2085c436ebc48e9a1091b77e9f229bf',
+              'Authorization': 'Key c65a89fe0d7e4500b845cadfb40f8d53',
               'Content-Type': 'application/json'
           },
           'data': data,
