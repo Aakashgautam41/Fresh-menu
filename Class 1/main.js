@@ -19,9 +19,9 @@ foodieApp.config(function($routeProvider){
 		controller: 'mainController'
 	})
 })
-var foodieApp.controller('loginCintroller',function($scope){
+foodieApp.controller('loginController',function($scope){
     
-})
+});
     
     foodieApp.controller('mainController',function($scope){
         $scope.restaurants = [{
