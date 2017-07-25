@@ -7,7 +7,21 @@
 //
 //       });
 // });
-var foodieApp = angular.module('foodieApp',[]);
+var foodieApp = angular.module('foodieApp',['ngRoute']);
+foodieApp.config(function($routeProvider){
+ $routeProvider
+	.when('/',{
+		templateUrl: 'pages/login.html',
+		controller: 'loginController'
+	})
+	.when('/home',{
+		templateUrl: 'pages/main.html',
+		controller: 'mainController'
+	})
+})
+var foodieApp.controller('loginCintroller',function($scope){
+    
+})
     
     foodieApp.controller('mainController',function($scope){
         $scope.restaurants = [{
@@ -95,3 +109,5 @@ var foodieApp = angular.module('foodieApp',[]);
         }];
     
     });
+
+  
