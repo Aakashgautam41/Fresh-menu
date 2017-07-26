@@ -19,9 +19,13 @@ foodieApp.config(function($routeProvider){
 		controller: 'mainController'
 	})
 })
-foodieApp.controller('loginController',function($scope){
+foodieApp.controller('loginController',function($scope,$location){
+    $scope.goToHome = function(){
+        console.log($location.url())
+        $location.url('home')
+    }
     
-});
+})
     
     foodieApp.controller('mainController',function($scope){
         $scope.restaurants = [{
