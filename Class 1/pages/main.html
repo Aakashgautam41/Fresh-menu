@@ -14,10 +14,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                       <li><a href="#">home</a></li>
+                       <li><a href="#!/">home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Order Online</a></li>
-                        <li><a href="#">logout</a></li>
+                        <li><a href="#!/restaurant/3">logout</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -46,9 +46,9 @@
             <div class="rest-category">
                <small>{{restaurant.category}} </small>
             </div>
-            <div class="rest-name">
-            <strong>{{restaurant.name}}</strong>
-            </div>
+           <div class="rest-name">
+               <a ng-href="#!/restaurant/{{restaurant.id}}"><strong>{{restaurant.name}}</strong></a>
+           </div>
             <div>
                <strong> {{restaurant.location}}</strong>
             </div>
