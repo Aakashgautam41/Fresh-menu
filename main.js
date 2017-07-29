@@ -30,6 +30,9 @@ foodieApp.config(function($routeProvider){
     
     
 })
+
+// ----------------------------------------- login controller start -------------------------------------------
+
 foodieApp.controller('loginController',function($scope,$location){
     $scope.goToHome = function(){
         console.log($location.url())
@@ -38,7 +41,11 @@ foodieApp.controller('loginController',function($scope,$location){
     
 })
 
+// ----------------------------------------- login controller end ---------------------------------------------
 
+// ----------------------------------------- login controller start -------------------------------------------
+
+// ----------------------------------------- restaurant controller start -------------------------------------------
 
 foodieApp.controller('restaurantController',function($scope,$routeParams,$http) {
 $scope.ingredients = [];
@@ -53,6 +60,10 @@ $scope.ingredients = [];
                 vote: '4.2',
                 cuisines: 'Modern Indian',
                 cost: '2200',
+                phone: '9812345678',
+                feachered:'modern-indian delicacies',
+                knownfor:'Mordenized presentation of dishes with an elegant decor',
+                highlight:'Home Delivery',
                 hours: '12 Noon to 1 AM (Mon-Sun)',
                 bestDish: {
                     name: 'Corn Pizza',
@@ -70,6 +81,10 @@ $scope.ingredients = [];
                 vote: '4.2',
                 cuisines: 'North Indian, Continental, Lebanese',
                 cost: '600',
+                phone: '011 33106581',
+                feachered:'North-Indian,Chicken',
+                knownfor:'Mordenized presentation of dishes with an elegant decor',
+                highlight:'Home Delivery',
                 hours: '12 Noon to 1 AM (Mon-Sun)',
                 bestDish: {
                     name: 'Corn Pizza',
@@ -81,12 +96,16 @@ $scope.ingredients = [];
         },
             {
                 name: 'The Big Chill Cakery',
-                address: 'Main Market, Khan Market, New Delhi',
+                address: 'Main Market, Khan Market, Delhi',
                 location: 'Khan Market',
                 category: 'BAKERY,DESSERT PARLOR',
                 vote: '4.3',
                 cuisines: 'Bakery, Desserts',
                 cost: '700',
+                phone: '011 41757577',
+                feachered:'Cakes,Deserts',
+                knownfor:'Assortment of cakes & desserts',
+                highlight:'Desserts and Bakes',
                 hours: '8 AM to 12 Midnight (Mon-Sun)',
                 bestDish: {
                     name: 'Corn Pizza',
@@ -104,6 +123,10 @@ $scope.ingredients = [];
                 vote: '3.5',
                 cuisines: 'Pizza, Fast Food',
                 cost: '600',
+                phone: '011 30806693',
+                feachered:' Pizza',
+                knownfor:'Quick pizza delivery service',
+                highlight:'Outdoor Seating',
                 hours: '11 AM to 11 PM (Mon-Sun)',
                 bestDish: {
                     name: 'Corn Pizza',
@@ -121,6 +144,10 @@ $scope.ingredients = [];
                 vote: '4.1',
                 cuisines: 'Cafe',
                 cost: '700',
+                phone: '011 30806693',
+                feachered:'Coffee',
+                knownfor:'International standard coffee & quick bites',
+                highlight:'Wheelchair Accessible',
                 hours: '7:30 AM to 12:30 AM (Mon-Sun)',
                 bestDish: {
                     name: 'Corn Pizza',
@@ -138,6 +165,10 @@ $scope.ingredients = [];
                 vote: '4.2',
                 cuisines: 'Chinese, Japanese, Italian, Seafood',
                 cost: '1500',
+                phone: '011 30806693',
+                feachered:'Authentic Chinese food',
+                knownfor:'Authentic Chinese food and decor',
+                highlight:'Valet Parking Available',
                 hours: '11 AM to 11:30 PM (Mon-Sun)',
                 bestDish: {
                     name: 'Corn Pizza',
@@ -155,6 +186,10 @@ $scope.ingredients = [];
                 vote: '3.9',
                 cuisines: 'Fast Food, American, Burger',
                 cost: '900',
+                phone: '011 30806693',
+                feachered:'Kickass burgers',
+                knownfor:'American style burger',
+                highlight:'Wine and Beer',
                 hours: '11 AM to 11 PM (Mon-Sun)',
                 bestDish: {
                     name: 'Corn Pizza',
@@ -359,10 +394,10 @@ foodieApp.controller('favController',function($scope,$location,$http) {
 
 
 
-// -----------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------- fav controller end-----------------------------------------
 
 
-
+// -----------------------------------------  main controller start -------------------------------------------
     
     foodieApp.controller('mainController',function($scope){
         $scope.ingredients = [];
@@ -488,4 +523,4 @@ foodieApp.controller('favController',function($scope,$location,$http) {
     });
  
 
- 
+ // ----------------------------------------- main controller end -------------------------------------------

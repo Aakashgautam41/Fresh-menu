@@ -2,12 +2,12 @@
     <div class="login" ng-controller="loginController">
         <div class="login-form">
             <h3> Login </h3>
-            <form action="http://sarthakbatra.com/loginSubmit" method="POST" name="loginForm">
+            <form action="" method="" name="loginForm">
                
                   <div class="form-group">    
                   <label for="user-email">Email address</label>
                   <input type="email" class="form-control" id="user-email" placeholder="Email" name="email" required="" ng-model="user.email">
-                  <div ng-show="loginForm.email.$error.required"> Required !</div>   
+                  <div ng-show="loginForm.email.$error.required"> Please enter your email</div>   
                   <div ng-show="loginForm.email.$error.email"> This doesn't looks like a valid email address</div>
                   </div>
               

@@ -1,24 +1,61 @@
- <div class="restaurant" ng-if="restaurant.name">
+ 
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+            <a class="navbar-brand animated tada fre" href="#!/home">Fresh menu</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                       <li><a href="#!/home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="#!/home"> <i class="fa fa-list" aria-hidden="true"></i> About</a></li>
+                        <li><a href="#!/home"><i class="fa fa-phone" aria-hidden="true"></i> Order Online</a></li>
+                        <li><a href="#!/fav"><i class="fa fa-cutlery" aria-hidden="true"></i>  Favourite Food</a></li>
+                        <li><a href="#!/"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li> 
+                    
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+ 
+    <div class="restaurant rest" ng-if="restaurant.name">
     <div class="rest-wrapper">
         <div class="image">
-            <img src="{{restaurant.image}}" height="100" width="100">
-        </div>
-        <div class="rest-info">
-            <div class="rest-category">
-               <small>{{restaurant.category}} </small>
-            </div>
-            <div class="rest-name">
+            <img src="{{restaurant.image}}" height="300" width="710">
+        </div> 
+
+    </div>
+           
+            <div class="rest-info">
+             <div class="rest-name ">
             <strong>{{restaurant.name}}</strong>
             </div>
-            <div>
-               <strong> {{restaurant.location}}</strong>
+            <div class="rest-category">
+               <small>{{restaurant.category}} &middot; {{restaurant.location}} </small>
             </div>
+             <div class="rating">
+        <strong>{{restaurant.vote}}</strong>
+    </div>
+            
+<!--
             <div class="rest-address">
                 {{restaurant.address}}
             </div>
+-->
         </div>
-    </div>
-<div class="rest-extra">
+  <button class="restbutton">Order Food Online</button>      
+  <button class="restbutton2">Book a Table</button>      
+   <div class="rest-extra">
+   
     <div class="type">
         <div><small>Cuisines:</small></div>
         <div><small>Cost for Two: </small></div>
@@ -32,39 +69,62 @@
         <div class="bestDish" ng-if="restaurant.bestDish">
 	        <span>{{restaurant.bestDish.name}} </span>
 	        <div ng-click="getIngredients(restaurant.bestDish.image)" class="button">Get Ingredients</div>
-		</div>
-    </div>
-</div>
-    <div class="rating">
-        <strong>{{restaurant.vote}}</strong>
-    </div>
-    <div ng-if="ingredients">
-    <ol>
-    <li ng-repeat="ingredient in ingredients">
-    {{ingredient}}
-    </li>
-    </ol>
+     <div ng-if="ingredients">
+            <ol>
+            <li ng-repeat="ingredient in ingredients">
+            {{ingredient}}
+            </li>
+            </ol>
     
-<!---------------------------------------- favourite food item--------------------------------------->
-<!--
-<div>
-<form action="">
-    <input type="checkbox"> Tomato <br>
-    <input type="checkbox">  Corn <br>
-    <input type="checkbox">  Chili  <br>
-    <input type="checkbox">  Black-pepper <br>
-    <input type="submit">
-</form>    
+ 
+    </div>
+		</div>
 
-
-
-
-
-
-
+    </div>
+</div>
+   
 
 </div>
--->
-<!--------------------------------------------------------------------------------------------------->
-</div>
+
+<div class="panel panel-default rest-panel">
+  <div class="panel-body">
+    <div class="row">
+        <div class="col-md-4 left">
+          
+                <h4 class="rest-detail">Phone Number</h4>
+                <span class="phone"> {{restaurant.phone}}</span> <br>
+                <span class="sub-head">Table booking recommended</span>
+               <h4>Cuisines</h4>
+                <span class="sub"> {{restaurant.cuisines}}</span>
+               <h4>Cost</h4>
+               ₹  {{restaurant.cost}}
+<span class="sub-head">(approx.)Exclusive of applicable taxes and charges, if any</span> <br>
+<span class="sub-head"> ₹260  for a pint of beer (approx.)
+Cash and Cards accepted</span>
+        </div>
+        <div class="col-md-4 middle">
+           <h4> Opening hours </h4>
+           <span class="sub"> {{restaurant.hours}}</span>
+           <h4>Address</h4>
+             {{restaurant.address}}
+            <a href="https://maps.google.co.in/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqQEywCzXSGZgRLyOGKEzwBOBzIW_-3ANZETdo-Pmpnpzjit_5" alt=""height="98"width="150" class="add"></a>
+             
+        </div>
+        <div class="col-md-4 right">
+            <h4>Highlights</h4>
+        <span class="sub"><li>{{restaurant.highlight}}</li>
+        </span>
+           <span class="sub"><li>Full Bar Available</li></span>
+           <span class="sub"><li>Drinking Age Applicable</li></span>
+           <span class="sub"><li>Smoking Area</li></span>
+           <span class="sub"><li>Live Musice</li></span>
+           <span class="sub"><li> Wifi</li></span>
+            <h4>Featured in Collection</h4>
+         <span class="sub">    {{restaurant.feachered}}</span>
+            
+            <h4>Known for</h4>
+            <span class="sub"> {{restaurant.knownfor}}</span>
+        </div>
+    </div>
+  </div>
 </div>
