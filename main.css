@@ -31,6 +31,7 @@ body {
 }
 a{
     color: #cb202d;
+   
 }
 
 a:hover{
@@ -398,7 +399,60 @@ ul.foot {
 .fav-name{
     color: #33373d;
 }
- 
+
+.right-panel{
+    width: 365px;
+    margin-left: 470px;
+    margin-top: 20px;
+}
+.rt-text{
+    font-size: 14px;
+    color: #33373d;
+    font-weight: bold;
+}
+.rt-input{
+    margin-top: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 21px;
+    padding-right: 21px;
+    border-radius: 4px;
+    border: .3px solid lightgray;
+    width: 319px;
+    font-size: 13px;
+    color: gray;
+}
+.rt-btn{
+    margin-top: 10px;
+    background-color:#099e44;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 21px;
+    padding-right: 21px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 319px;
+}
+.rt-h3{
+    font-size: 23px;
+    font-weight:bold;
+     color: #33373d;
+    margin-top: -15px;
+}
+.rt{
+    margin-left: 5px;
+}
+.row{
+    width: 100%;
+}
+.col-md-4 .right-panel{
+    margin-left:110px;
+    
+}
+.col-md-7{
+    margin-left: -50px;
+}
 /*-------------------------------- vertical icon bar---------------------------------------------*/
  
 
