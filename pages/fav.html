@@ -24,8 +24,9 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
+        
 <div class="list" id="list1">
-<h4>FOOD ITEMS YOU MAY LIKE:</h4>
+<h4> FOOD ITEMS YOU MAY LIKE : </h4>
 <!-- // form for elements -->
 <lable ng-repeat="list1 in lists1">
     <input type="checkbox" name="chk[]" ng-model="lst1" value="{{list1.vl}}" ng-change="change1(lst1,list1.vl)">
@@ -59,7 +60,7 @@
                  <div class="rest-extra">
                    <div class="type">
                        <div class="bestDish" ng-if="restaurant.bestDish">
-                             <span>{{restaurant.bestDish.name}} </span>
+                             <span class="fav-name">{{restaurant.bestDish.name}} </span>
                              <div ng-click="getFav(restaurant.bestDish.image)" class="button">See If your Fav or not</div>
                        </div>
 

@@ -30,7 +30,58 @@
                <p>Fresh menu</p> 
                 <span class="head">Find Best Restaurants In Your Town</span>
             </div>
-        <div class="ui container">
+
+      <div class="row">
+          <div class="col-md-1">
+              <div class="panel panel-default main-panel">
+                  <div class="panel-body">
+                     <h4 class="left-sec">Filter</h4>
+                       <input type="checkbox"class="regular"> Book a Table <hr>
+                        <input type="checkbox"class="regular"> Order food online <br>
+                        <span class="regular green">Get 15% off (up to Rs. 100) on your first order with the code EATIN when you pay online.</span> <hr>
+                            <h4 class="left-sec">Sort by</h4>
+                            <span class="regular green">Popularity <span class="gray">- high to low</span></span>   <br>
+                            <span class="regular">Ratings <span class="gray">- high to low</span></span> <br>
+                            <span class="regular">Cost <span class="gray">- high to low</span></span> <br>
+                            <span  class="regular">Cost <span class="gray">- low to high</span></span>      <br>  
+                       
+                            <span class="regular">Recently added</span> <br>
+                            
+                            <h4 class="left-sec">Category</h4>
+                            <span class="regular">Delivery <span class="gray right">13986</span></span> <br>
+                            <span class="regular">Dine-out <span class="gray right">9510</span></span> <br>
+                            <span class="regular">Drinks & Nightlife <span class="gray right">613</span></span> <br>
+                            <span class="regular">Cafés <span class="gray right">9145</span></span> <br>
+                            
+                            <h4 class="left-sec">Location</h4>
+                            <span class="regular">South Delhi <span class="gray right">4105</span></span> <br>
+                            <span class="regular"> Gurgaon <span class="gray right">3146</span></span> <br>
+                            <span class="regular">West Delhi <span class="gray right">3033</span></span> <br>
+                            <span class="regular">Ghaziabad <span class="gray right">2216</span></span> <br>
+                            <span class="regular">Noida <span class="gray right">1878</span></span> <br>
+                            <span class="regular">East Delhi <span class="gray right">1260</span> <br>
+                            <span class="regular"><a href="#">See all locations</a></span><br>
+                            
+                            <h4 class="left-sec">Cuisine</h4>
+                            <span class="regular">North Indian<span class="gray right">8387</span></span> <br>
+                            <span  class="regular">Chinese<span class="gray right">5591</span></span> <br>
+                            <span class="regular">Fast Food<span class="gray right">4447</span></span> <br>
+                            <span class="regular">Mughlai<span class="gray right">2132</span></span> <br>
+                            <span class="regular">Bakery<span class="gray right">1612</span></span> <br>
+                            <span class="regular">South Indian<span class="gray right">1296</span></span> <br>
+                            <span class="regular">Street Food<span class="gray right">1278</span></span> <br>
+                            <span class="regular">Desserts<span class="gray right">1178</span></span> <br>
+                            <span class="regular">Cafe<span class="gray right">1050</span></span> <br>
+                            <span class="regular">Italian<span class="gray right">1232</span></span> <br>
+                            <span class="regular"><a href="#">See all cuisines</a></span><br>
+                      </span>  
+                </div>
+              </div>
+          </div>
+
+<!------------------------------------------------- mid col start----------------------------------------->
+          <div class="col-md-7">
+                   <div class="ui container">
         
             
 <div class="search-bar">
@@ -38,7 +89,7 @@
           <div class="input-wrapper">
           <input type="text" class="form-control" placeholder="Search..." ng-model="query">
         </div>
-         <button type="submit" class="btn btn-default">Search</button>
+         <button type="submit" class="btn btn-default search">Search</button>
        </form>
 </div>
  <div ng-repeat="restaurant in restaurants | filter: query" class="restaurant">
@@ -78,10 +129,16 @@
         </div>
     </div>
             
-        </div>
-        
+        </div>   
+          </div>
+<!------------------------------------------------- mid col end-------------------------------------------> 
+
+<!------------------------------------------------- right col start--------------------------------------->      
+          <div class="col-md-4"></div>
+<!------------------------------------------------- right col end----------------------------------------->
+      </div>  
  
-<!-------------------------------------------------------- footer start --------------------------------------->
+<!-------------------------------------------------------- footer start ---------------------------------->
  <div class="footer">
      <ul class="foot">
 <!--

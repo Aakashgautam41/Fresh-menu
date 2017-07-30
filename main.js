@@ -53,7 +53,7 @@ $scope.ingredients = [];
 
 	$scope.restaurantId = $routeParams.id;
 	var restaurants = [{
-                name: 'Farzi Cafe',
+                name: 'The Minnions Cafe',
                 address: '38/39, Level 1, Block E , Inner Circle, Connaught Place',
                 location: 'Connaught Place',
                 category: 'Casual Dining, Bar',
@@ -66,10 +66,10 @@ $scope.ingredients = [];
                 highlight:'Home Delivery',
                 hours: '12 Noon to 1 AM (Mon-Sun)',
                 bestDish: {
-                    name: 'Corn Pizza',
-                    image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+                    name: 'Espresso',
+                    image: 'https://images.pexels.com/photos/347144/pexels-photo-347144.jpeg?h=350&auto=compress&cs=tinysrgb'
                 },
-                image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
+                image: 'https://images.pexels.com/photos/8732/coffee-cup-mug-drink.jpg?w=1260&h=750&auto=compress&cs=tinysrgb',
                  id : 1
         
         },
@@ -87,8 +87,8 @@ $scope.ingredients = [];
                 highlight:'Home Delivery',
                 hours: '12 Noon to 1 AM (Mon-Sun)',
                 bestDish: {
-                    name: 'Corn Pizza',
-                    image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+                    name: 'Roasted Chicken',
+                    image: 'https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?h=350&auto=compress&cs=tinysrgb'
                 },
                 image: 'https://thumb7.shutterstock.com/display_pic_with_logo/288100/184074431/stock-photo-marinated-grilled-healthy-chicken-breasts-cooked-on-a-summer-bbq-and-served-with-fresh-herbs-and-184074431.jpg',
                       id : 2
@@ -108,8 +108,8 @@ $scope.ingredients = [];
                 highlight:'Desserts and Bakes',
                 hours: '8 AM to 12 Midnight (Mon-Sun)',
                 bestDish: {
-                    name: 'Corn Pizza',
-                    image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+                    name: 'Pastry With Nuts Sliced Mangoes and Blackberries on Top',
+                    image: 'https://images.pexels.com/photos/159887/pexels-photo-159887.jpeg?h=350&auto=compress&cs=tinysrgb'
                 },
                 image: 'https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?h=350&auto=compress&cs=tinysrgb',
                       id : 3
@@ -130,7 +130,7 @@ $scope.ingredients = [];
                 hours: '11 AM to 11 PM (Mon-Sun)',
                 bestDish: {
                     name: 'Corn Pizza',
-                    image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+                    image: 'https://images.pexels.com/photos/7658/food-pizza-box-chalkboard.jpg?h=350&auto=compress&cs=tinysrgb'
                 },
                 image: 'https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?h=350&auto=compress&cs=tinysrgb   ',
                       id : 4
@@ -150,8 +150,8 @@ $scope.ingredients = [];
                 highlight:'Wheelchair Accessible',
                 hours: '7:30 AM to 12:30 AM (Mon-Sun)',
                 bestDish: {
-                    name: 'Corn Pizza',
-                    image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+                    name: 'Coffee',
+                    image: 'https://images.pexels.com/photos/374852/pexels-photo-374852.jpeg?h=350&auto=compress&cs=tinysrgb'
                 },
                 image: 'https://images.pexels.com/photos/180066/pexels-photo-180066.jpeg?h=350&auto=compress&cs=tinysrgb',
                       id : 5
@@ -171,8 +171,8 @@ $scope.ingredients = [];
                 highlight:'Valet Parking Available',
                 hours: '11 AM to 11:30 PM (Mon-Sun)',
                 bestDish: {
-                    name: 'Corn Pizza',
-                    image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+                    name: 'Pasta on White Bowl',
+                    image: 'https://images.pexels.com/photos/64208/pexels-photo-64208.jpeg?h=350&auto=compress&cs=tinysrgb'
                 },
                 image: 'https://images.pexels.com/photos/46247/thai-food-noodle-fried-noodles-meal-46247.jpeg?h=350&auto=compress&cs=tinysrgb',
                       id : 6
@@ -192,8 +192,8 @@ $scope.ingredients = [];
                 highlight:'Wine and Beer',
                 hours: '11 AM to 11 PM (Mon-Sun)',
                 bestDish: {
-                    name: 'Corn Pizza',
-                    image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+                    name: 'Hamburger',
+                    image: 'https://images.pexels.com/photos/161674/appetite-beef-big-bread-161674.jpeg?h=350&auto=compress&cs=tinysrgb'
                 },
                 image: ' https://images.pexels.com/photos/496580/pexels-photo-496580.jpeg?h=350&auto=compress&cs=tinysrgb',
                       id : 7
@@ -254,19 +254,19 @@ foodieApp.controller('favController',function($scope,$location,$http) {
   $scope.restaurants = [{
 							id: 1,
 							bestDish: {
-										name: 'Bean Salad',
-										image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+										name: 'Salad',
+										image: 'https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'
 									},
-							image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
+							image: 'https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'
 						},{
 
 						id: 2,
 						bestDish: {
-									name: 'Corn Pizza',
-									image: 'https://images.food52.com/zyrGNL1_8ZxmJ43jtBLQoyLfNvA=/753x502/c947f605-2d61-4a10-9f69-abc7dda9fffb--DSC07406.JPG'
+									name: 'Sandwich',
+									image: 'https://images.pexels.com/photos/5506/bread-food-salad-sandwich.jpg?w=1260&h=750&auto=compress&cs=tinysrgb'
 								},
 
-            image: 'https://images.food52.com/zyrGNL1_8ZxmJ43jtBLQoyLfNvA=/753x502/c947f605-2d61-4a10-9f69-abc7dda9fffb--DSC07406.JPG'
+            image: 'https://images.pexels.com/photos/5506/bread-food-salad-sandwich.jpg?w=1260&h=750&auto=compress&cs=tinysrgb'
           },
           {
 								id: 3,
@@ -291,11 +291,11 @@ foodieApp.controller('favController',function($scope,$location,$http) {
 
 
 						$scope.lists1 = [
-						{'vl' : 'vegetable'},
-						{'vl' : 'almond'},
-						{'vl' : 'corn'},
-						{'vl' : 'milk'},
-						{'vl' : 'apple'},
+						{'vl' : 'Vegetable'},
+						{'vl' : 'Almond'},
+						{'vl' : 'Corn'},
+						{'vl' : 'Milk'},
+						{'vl' : 'Apple'},
 					];
 					$scope.lst1 = [];
 					$scope.change1 = function(check,value){
@@ -308,11 +308,11 @@ foodieApp.controller('favController',function($scope,$location,$http) {
 
 					//
 					$scope.lists2 = [
-					{'vl' : 'meat'},
-					{'vl' : 'egg'},
-					{'vl' : 'onion'},
-					{'vl' : 'lettuce'},
-					{'vl' : 'banana'},
+					{'vl' : 'Meat'},
+					{'vl' : 'Egg'},
+					{'vl' : 'Onion'},
+					{'vl' : 'Lettuce'},
+					{'vl' : 'Banana'},
 					];
 					$scope.lst2 = [];
 					$scope.change2 = function(check,value){
@@ -402,7 +402,7 @@ foodieApp.controller('favController',function($scope,$location,$http) {
     foodieApp.controller('mainController',function($scope){
         $scope.ingredients = [];
         $scope.restaurants = [{
-                name: 'Farzi Cafe',
+                name: 'The Minnions Cafe',
                 address: '38/39, Level 1, Block E , Inner Circle, Connaught Place',
                 location: 'Connaught Place',
                 category: 'Casual Dining, Bar',
@@ -414,7 +414,7 @@ foodieApp.controller('favController',function($scope,$location,$http) {
                     name: 'Corn Pizza',
                     image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
                 },
-                image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
+                image: 'https://images.pexels.com/photos/2059/restaurant-red-beans-coffee.jpg?h=350&auto=compress&cs=tinysrgb',
               id : 1
         },
                 {
