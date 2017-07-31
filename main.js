@@ -254,19 +254,19 @@ foodieApp.controller('favController',function($scope,$location,$http) {
   $scope.restaurants = [{
 							id: 1,
 							bestDish: {
-										name: 'Salad',
-										image: 'https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'
+										name: 'Bean Salad',
+										image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
 									},
-							image: 'https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'
+							image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
 						},{
 
 						id: 2,
 						bestDish: {
-									name: 'Sandwich',
-									image: 'https://images.pexels.com/photos/5506/bread-food-salad-sandwich.jpg?w=1260&h=750&auto=compress&cs=tinysrgb'
+									name: 'Corn Pizza',
+									image: 'https://images.food52.com/zyrGNL1_8ZxmJ43jtBLQoyLfNvA=/753x502/c947f605-2d61-4a10-9f69-abc7dda9fffb--DSC07406.JPG'
 								},
 
-            image: 'https://images.pexels.com/photos/5506/bread-food-salad-sandwich.jpg?w=1260&h=750&auto=compress&cs=tinysrgb'
+            image: 'https://images.food52.com/zyrGNL1_8ZxmJ43jtBLQoyLfNvA=/753x502/c947f605-2d61-4a10-9f69-abc7dda9fffb--DSC07406.JPG'
           },
           {
 								id: 3,
@@ -291,11 +291,20 @@ foodieApp.controller('favController',function($scope,$location,$http) {
 
 
 						$scope.lists1 = [
-						{'vl' : 'Vegetable'},
-						{'vl' : 'Almond'},
-						{'vl' : 'Corn'},
-						{'vl' : 'Milk'},
-						{'vl' : 'Apple'},
+						{'vl' : 'vegetable'},
+						{'vl' : 'almond'},
+						{'vl' : 'corn'},
+						{'vl' : 'milk'},
+						{'vl' : 'apple'},
+                        {'vl' : 'meat'},
+                        {'vl' : 'egg'},
+                        {'vl' : 'onion'},
+                        {'vl' : 'lettuce'},
+                        {'vl' : 'banana'},
+                        {'vl' : 'pepper'},
+                        {'vl' : 'cream'},
+                        {'vl' : 'chocolate'},
+                        
 					];
 					$scope.lst1 = [];
 					$scope.change1 = function(check,value){
@@ -308,11 +317,20 @@ foodieApp.controller('favController',function($scope,$location,$http) {
 
 					//
 					$scope.lists2 = [
-					{'vl' : 'Meat'},
-					{'vl' : 'Egg'},
-					{'vl' : 'Onion'},
-					{'vl' : 'Lettuce'},
-					{'vl' : 'Banana'},
+                    {'vl' : 'vegetable'},
+				    {'vl' : 'almond'},
+				    {'vl' : 'corn'},
+				    {'vl' : 'milk'},
+				    {'vl' : 'apple'},
+					{'vl' : 'meat'},
+					{'vl' : 'egg'},
+					{'vl' : 'onion'},
+					{'vl' : 'lettuce'},
+					{'vl' : 'banana'},
+                    {'vl' : 'pepper'},
+                    {'vl' : 'cream'},
+                    {'vl' : 'chocolate'},
+                        
 					];
 					$scope.lst2 = [];
 					$scope.change2 = function(check,value){
@@ -356,7 +374,7 @@ foodieApp.controller('favController',function($scope,$location,$http) {
 																}
 																// var info2 = "<h2 class='highlight-info'>This is the food You May LIKE</h2>";
 																console.log("Your FAV");
-																$(".highlight-info").text('This is the food You May LIKE');
+																$(".highlight-info").text('You may like this food');
 																	$(".rest-extra").css("background-color" ,"#308917");
 																break;
 															 }
@@ -364,7 +382,7 @@ foodieApp.controller('favController',function($scope,$location,$http) {
 															 else {
 																//  var info1 = "<h2 class='highlight-info'>You will not like this Food</h2>";
 																 console.log("Not Your FAV");
-																	$(".highlight-info").text('You will not like this Food');
+																	$(".highlight-info").text('You will not like this food');
 																	$(".rest-extra").css("background-color" ,"#ea0b0b");
 
 															 }
@@ -382,7 +400,7 @@ foodieApp.controller('favController',function($scope,$location,$http) {
 
 
 })
-
+ 
 
 
 

@@ -371,7 +371,7 @@ ul.foot {
   background-color:darkslategray;
   color: white;
   width: 20%;
-/*  margin: 10px auto;*/
+  margin: 10px auto;
   padding: 15px;
   padding-top: 10px;
     opacity: .8;
@@ -380,13 +380,13 @@ ul.foot {
 
 #list1 {
     margin-top: 70px;
-    /* margin-left: -30px; */
+    margin-left: -30px; 
     margin-bottom: 20px;
     margin-left: 400px;
 }
 #list2 {
-    margin-top: -212px;
-    /* margin-left: -30px; */
+    margin-top: -388px;
+    margin-left: -30px; 
     margin-bottom: 20px;
     margin-left: 680px;
 }
