@@ -1,75 +1,75 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                   <a class="navbar-brand animated tada fre" href="#!/home">Fresh menu</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                       <li><a href="#!/home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li><a href="#!/home"> <span style="font-size:14px;cursor:pointer" onclick="openNav()"><i class="fa fa-list" aria-hidden="true"></i> About </span></a></li>
-                        <li><a href="#!/home"><i class="fa fa-phone" aria-hidden="true"></i> Order Online</a></li>
-                        <li><a href="#!/fav"><i class="fa fa-cutlery" aria-hidden="true"></i>  Favourite Food</a></li>
-                        <li><a href="#!/"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li> 
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-        
-<div class="list" id="list1">
-<h4> FOOD ITEMS YOU MAY LIKE : </h4>
-<!-- // form for elements -->
-<lable ng-repeat="list1 in lists1">
-    <input type="checkbox" name="chk[]" ng-model="lst1" value="{{list1.vl}}" ng-change="change1(lst1,list1.vl)">
-    {{list1.vl}} <br>
-    </lable>
-  </div>
+            <a class="navbar-brand animated tada fre" href="#!/home">Fresh menu</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#!/home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="#!/home"> <span style="font-size:14px;cursor:pointer" onclick="openNav()"><i class="fa fa-list" aria-hidden="true"></i> About </span></a></li>
+                <li><a href="#!/home"><i class="fa fa-phone" aria-hidden="true"></i> Order Online</a></li>
+                <li><a href="#!/fav"><i class="fa fa-cutlery" aria-hidden="true"></i>  Favourite Food</a></li>
+                <li><a href="#!/"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 
-<div class="list" id="list2">
-    <h4>FOOD ITEMS YOU MAY NOT LIKE:</h4>
-    <!-- // form for elements -->
 
-    <lable ng-repeat="list2 in lists2">
-        <input type="checkbox" name="chk[]" ng-model="lst2" value="{{list2.vl}}" ng-change="change2(lst2,list2.vl)">
-        {{list2.vl}} <br>
+<div class="col-xs-12">
+    <div class="list" id="list1">
+        <h4> FOOD ITEMS YOU MAY LIKE : </h4>
+        <!-- // form for elements -->
+        <lable ng-repeat="list1 in lists1">
+            <input type="checkbox" name="chk[]" ng-model="lst1" value="{{list1.vl}}" ng-change="change1(lst1,list1.vl)"> {{list1.vl}} <br>
         </lable>
-      </div>
+    </div>
 
-        <!--- - - -MAIN PAGE STARTS HERE --------------------------------------------------------------------------------------------------------->
+    <div class="list" id="list2">
+        <h4>FOOD ITEMS YOU MAY NOT LIKE:</h4>
+        <!-- // form for elements -->
 
-
-            <div class="ui container">
-
-                  <!-- tell them about orderBy: 'cost' and multiple filters -->
-                  <div ng-repeat="restaurant in restaurants" class="restaurant" >
-                    <div class="rest-wrapper">
-                         <div class="image">
-                             <img src="{{restaurant.image}}" height="100" width="150">
-                         </div>
-                         <h2 class='highlight-info'> </h2>
-                   </div>
-                 <div class="rest-extra">
-                   <div class="type">
-                       <div class="bestDish" ng-if="restaurant.bestDish">
-                             <span class="fav-name">{{restaurant.bestDish.name}} </span>
-                             <div ng-click="getFav(restaurant.bestDish.image)" class="button">See If your Fav or Not</div>
-                       </div>
-
-                   </div>
-
-                 </div>
+        <lable ng-repeat="list2 in lists2">
+            <input type="checkbox" name="chk[]" ng-model="lst2" value="{{list2.vl}}" ng-change="change2(lst2,list2.vl)"> {{list2.vl}} <br>
+        </lable>
+    </div>
+</div>
+<!--- - - -MAIN PAGE STARTS HERE --------------------------------------------------------------------------------------------------------->
 
 
+<div class="ui container">
+
+    <!-- tell them about orderBy: 'cost' and multiple filters -->
+    <div ng-repeat="restaurant in restaurants" class="restaurant mob-rest">
+        <div class="rest-wrapper">
+            <div class="image">
+                <img src="{{restaurant.image}}" height="100" width="150">
+            </div>
+            <h2 class='highlight-info'> </h2>
+        </div>
+        <div class="rest-extra">
+            <div class="type">
+                <div class="bestDish" ng-if="restaurant.bestDish">
+                    <span class="fav-name">{{restaurant.bestDish.name}} </span>
+                    <div ng-click="getFav(restaurant.bestDish.image)" class="button">See If your Fav or Not</div>
                 </div>
 
-
             </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>

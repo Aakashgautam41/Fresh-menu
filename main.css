@@ -10,39 +10,39 @@ body {
 }
 
 .hero {
-/*
+    /*
     background-image: url('login.jpeg');
     background-size: cover;
-*/ 
- 
-    background: linear-gradient(to right, black,#9a8478);
+*/
+    background: linear-gradient(to right, black, #9a8478);
     min-height: 300px;
-   
+
     color: white;
     font-size: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-/*    margin-top: 50px;*/
-   font-family: Monofett, cursive;
-/*    opacity: .7;*/
- 
-}
-a{
-    color: #cb202d;
-   
+    /*    margin-top: 50px;*/
+    font-family: Monofett, cursive;
+    /*    opacity: .7;*/
 }
 
-a:hover{
+a {
+    color: #cb202d;
+
+}
+
+a:hover {
     color: #cb202d;
     text-decoration: none;
 }
 
-.head{
+.head {
     font-size: 25px;
-     font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
+
 #app .navbar {
     color: white;
     background-color: black;
@@ -51,17 +51,18 @@ a:hover{
 }
 
 #app .navbar li:hover {
-    background-color:#cb202d ;
+    background-color: #cb202d;
 }
 
-.fre{
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  color:greenyellow !important;
-  font-family: Pacifico, cursive;
-  font-size: 30px;
+.fre {
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    color: greenyellow !important;
+    font-family: Pacifico, cursive;
+    font-size: 30px;
 }
+
 /* -----------------------------------------------------------*/
 
 ul.foot {
@@ -70,7 +71,7 @@ ul.foot {
     padding: 0;
     overflow: hidden;
     background-color: black;
-   
+
 }
 
 .foot li {
@@ -88,6 +89,7 @@ ul.foot {
 
 
 /*------------------------------------------------------------*/
+
 #app .navbar a {
     color: white;
 }
@@ -97,7 +99,7 @@ ul.foot {
 }
 
 #app .login {
-/*    background-color: #2c1739;*/
+    /*    background-color: #2c1739;*/
     background: url(login2.jpeg);
     background-size: cover;
     height: 100vh;
@@ -117,7 +119,7 @@ ul.foot {
     padding-top: 0;
     border-radius: 4px;
 }
- 
+
 /*----------------------------------------- restaurant details----------------------------------------------*/
 
 .hero {
@@ -134,32 +136,36 @@ ul.foot {
     padding: 2rem;
     border-radius: 4px;
 }
+
 /*------------------------------------------------------ restaurant.html -------------------------*/
-.rest{
+
+.rest {
     margin-top: 60px;
     width: 750px;
 }
+
 .rest .rest-info .rest-name {
     font-size: 30px;
     color: #33373d;
     margin-top: 20px;
 }
 
- 
+
 .rest .rest-info .rest-category {
     font-size: 18px;
     color: gray;
     margin-top: 10px;
 }
-{
+
+    {
     font-size: 18px;
 }
 
-.restbutton{
+.restbutton {
     background-color: #007e32;
     color: white;
     border: none;
-/*    font-size: 1px;*/
+    /*    font-size: 1px;*/
     height: 45px;
     width: 180px;
     border-radius: 4px;
@@ -167,20 +173,20 @@ ul.foot {
     margin-right: 10px;
 }
 
-.restbutton2{
+.restbutton2 {
     background-color: #33aedc;
     color: white;
     border: none;
-/*    font-size: 17px;*/
+    /*    font-size: 17px;*/
     height: 45px;
     width: 150px;
-    padding: 11px,24px;
+    padding: 11px, 24px;
     border-radius: 4px;
 }
 
 .rest .rest-info .rating {
     color: white;
-    background-color:#cb202d;
+    background-color: #cb202d;
     padding: 0.5rem 1rem;
     font-size: 18px;
     border-radius: 4px;
@@ -189,7 +195,7 @@ ul.foot {
     margin-right: 24px;
 }
 
-.rest-panel{
+.rest-panel {
     display: flex;
     background-color: white;
     position: relative;
@@ -204,92 +210,107 @@ ul.foot {
     border-top: none;
 }
 
-.rest-panel .rest-extra{
- 
- 
-     border-top: none; 
-    
+.rest-panel .rest-extra {
+
+
+    border-top: none;
+
 }
-.row{
+
+.row {
     width: 750px;
 }
-.col-md-4.right{
-   text-align: left; 
+
+.col-md-4.right {
+    text-align: left;
 }
-.rest-detail{
-    color:#33373d;
+
+.rest-detail {
+    color: #33373d;
     font-size: 18px;
 }
 
-.sub-head{
+.sub-head {
     color: gray;
     font-size: 12px;
 }
-.sub{
+
+.sub {
     font-size: 13.3px;
 }
-.phone{
+
+.phone {
     font-size: 18px;
     font-weight: bold;
     color: green;
 }
-.add{
+
+.add {
     margin-top: 20px;
 }
-.sub li{
-    list-style:disc;
+
+.sub li {
+    list-style: disc;
 }
 
-.main-panel{
+.main-panel {
     margin-left: 130px;
     width: 205px;
-/*    border: none;*/
+    /*    border: none;*/
 }
 
-.left-sec{
+.left-sec {
     font-size: 17px;
     font-weight: bold;
-    color:#33373d;
+    color: #33373d;
 }
-.regular{
+
+.regular {
     font-size: 13.2px;
     line-height: 20px;
- 
+
 }
-.green{
+
+.green {
     color: green;
 }
-.gray{
+
+.gray {
     color: gray;
 }
-.right{
+
+.right {
     float: right;
     font-size: 12px;
 }
+
 /*------------------------------------------------------------------------------------------------*/
+
 .rest-wrapper {
     display: flex;
     font-family: sans-serif;
 }
+
 .search {
-    color:white;
-    background-color:#cb202d;
+    color: white;
+    background-color: #cb202d;
     border: none;
- 
- 
+
+
 }
 
 .search:hover {
-    color:white;
+    color: white;
     background-color: #c91137;
- 
+
 }
 
- .search:active {
-    color:white;
+.search:active {
+    color: white;
     background-color: #c91137;
- 
+
 }
+
 .rest-wrapper .image {
     margin-right: 1rem;
 }
@@ -321,14 +342,14 @@ ul.foot {
 
 .rest-extra .type {
     text-transform: uppercase;
-     color: #89959B;
-     flex: none;
-     margin-right: 2rem;
+    color: #89959B;
+    flex: none;
+    margin-right: 2rem;
 }
 
 .restaurant .rating {
     color: white;
-    background-color:#cb202d;
+    background-color: #cb202d;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -352,14 +373,14 @@ ul.foot {
 }
 
 .search-bar form .input-wrapper {
-   flex: 1;
-   margin-right: 1rem;
+    flex: 1;
+    margin-right: 1rem;
 }
 
 
 .bestDish .button {
     display: inline-block;
-    background-color:#cb202d;
+    background-color: #cb202d;
     color: white;
     padding: 0.4rem 1rem;
     border-radius: 4px;
@@ -368,63 +389,69 @@ ul.foot {
 }
 
 .list {
-  background-color:darkslategray;
-  color: white;
-  width: 20%;
-  margin: 10px auto;
-  padding: 15px;
-  padding-top: 10px;
+    background-color: darkslategray;
+    color: white;
+    width: 20%;
+    margin: 10px auto;
+    padding: 15px;
+    padding-top: 10px;
     opacity: .8;
-   
+
 }
 
 #list1 {
     margin-top: 70px;
-    margin-left: -30px; 
+    margin-left: -30px;
     margin-bottom: 20px;
     margin-left: 400px;
 }
+
 #list2 {
     margin-top: -388px;
-    margin-left: -30px; 
+    margin-left: -30px;
     margin-bottom: 20px;
     margin-left: 680px;
 }
- .rest-extra .type {
+
+.rest-extra .type {
     text-transform: uppercase;
     color: #89959B;
     flex: none;
     margin-right: 2rem;
 }
-.fav-name{
+
+.fav-name {
     color: #33373d;
 }
 
-.right-panel{
+.right-panel {
     width: 365px;
     margin-left: 470px;
     margin-top: 20px;
 }
-.rt-text{
+
+.rt-text {
     font-size: 14px;
     color: #33373d;
     font-weight: bold;
 }
-.rt-input{
+
+.rt-input {
     margin-top: 10px;
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 21px;
     padding-right: 21px;
     border-radius: 4px;
-    border: .3px solid lightgray;
+    border: 1px solid darkgray;
     width: 319px;
     font-size: 13px;
     color: gray;
 }
-.rt-btn{
+
+.rt-btn {
     margin-top: 10px;
-    background-color:#099e44;
+    background-color: #099e44;
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 21px;
@@ -434,39 +461,46 @@ ul.foot {
     border: none;
     width: 319px;
 }
-.rt-h3{
+
+.rt-h3 {
     font-size: 23px;
-    font-weight:bold;
-     color: #33373d;
+    font-weight: bold;
+    color: #33373d;
     margin-top: -15px;
 }
-.rt{
+
+.rt {
     margin-left: 5px;
 }
-.row{
+
+.row {
     width: 100%;
 }
-.col-md-4 .right-panel{
-    margin-left:110px;
-    
+
+.col-md-4 .right-panel {
+    margin-left: 110px;
+
 }
-.col-md-7{
+
+.col-md-7 {
     margin-left: -50px;
 }
+
 /*-------------------------------- overlay effect---------------------------------------------*/
- .overlay {
+
+.overlay {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-/*    background-color: rgba(50,50,50, 0.9);*/
-     background-color: black;
-/*     opacity: .9;*/
+    background-color: #222;
+    /*    background-color: rgba(50,50,50, 0.9);*/
+    background-color: #222;
+    /*     opacity: .9;*/
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: .8s ease;
 }
 
 .overlay-content {
@@ -478,17 +512,17 @@ ul.foot {
     margin-left: 300px;
 }
 
-.overlay p{
+.overlay p {
     padding: 8px;
     text-decoration: none;
     font-size: 16px;
     color: silver;
     display: block;
-    transition: 0.3s;
+    transition: 5s;
     margin-top: -10px;
 }
 
-.overlay h4{
+.overlay h4 {
     padding: 8px;
     text-decoration: none;
     font-size: 20px;
@@ -496,16 +530,18 @@ ul.foot {
     display: block;
     transition: 0.3s;
 }
-.overlay h3{
+
+.overlay h3 {
     padding: 8px;
     text-decoration: none;
     font-size: 30px;
-    color:chartreuse;
+    color: chartreuse;
     display: block;
     transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
 }
 
@@ -519,3 +555,51 @@ ul.foot {
 
 
 /*-------------------------------- overlay effect end ---------------------------------------------*/
+
+@media (max-width:500px) {
+    .login-form {
+        width: 290px !important;
+    }
+    form {
+        width: 250px;
+    }
+    .hiddn {
+        display: none;
+    }
+    .hero {
+        width: 720px;
+        height: 450px;
+    }
+    .search-bar {
+        margin-left: 90px;
+    }
+    .mob-form {
+        width: 520px;
+    }
+    .restaurant {
+        margin-left: 90px;
+    }
+    .footer {
+        width: 720px;
+    }
+    .rest {
+        margin-left: 0px;
+    }
+    .list {
+        background-color: gray;
+        color: white;
+        width: 200px;
+        display: block;
+        margin: 10px auto;
+        margin-bottom: 50px;
+        padding: 15px;
+        padding-top: 10px;
+        opacity: 1;
+    }
+    #list2 {}
+
+}
+
+.mob-rest {
+    margin-top: 50px;
+}
