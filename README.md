@@ -1,0 +1,1 @@
+# Fresh-menu This website maintains a list of favorite food items of a user. The app requires the user to provide an image of the food and automatically stores the ingredients in the dish. To achieve this the clarifai api was used.
